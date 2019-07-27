@@ -10,3 +10,5 @@ gems:
 
 exclude:
   - README.md
+
+theme: jekyll-theme-minimal
