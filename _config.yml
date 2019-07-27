@@ -11,4 +11,4 @@ gems:
 exclude:
   - README.md
 
-theme: jekyll-theme-minimal
+theme: jekyll-theme-midnight
