@@ -1,0 +1,12 @@
+name: Thomas Smith
+description: Software developer in Ann Arbor, Michigan
+
+baseurl: "/blog"
+permalink: /:slug/
+version: v1.2.0
+
+gems:
+  - jekyll-feed
+
+exclude:
+  - README.md
