@@ -1,21 +1,4 @@
 ---
 ---
 
-.posts > div {
-  margin-top: 20px;
-}
-
-.posts > div > a {
-  font-size: 160%;
-}
-
-.posts > div > .date {
-  display: inline-block;
-  font-size: small;
-  margin-left: 10px;
-  opacity: 0.5;
-}
-
-.posts > div > .excerpt {
-  font-style: italic;
-}
+@import "homepage";
