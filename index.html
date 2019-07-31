@@ -6,8 +6,8 @@ layout: default
 <div class="posts">
   {% for post in site.posts %}
     <div>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      <div class="date">{{ post.date }}</div>
+      <a href="{{ post.url | relative_url }}">{{ post.title | xml_escape }}</a>
+      <div class="date">{{ post.date | date_to_string }}</div>
       <div class="excerpt">{{ post.excerpt }}</div>
     </div>
   {% endfor %}

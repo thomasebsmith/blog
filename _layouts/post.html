@@ -4,11 +4,15 @@
     <meta charset="utf-8">
     <title>{{ site.name }} | Blog | {{ page.title }}</title>
     <link rel="stylesheet" href="/main.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
+    <link rel="stylesheet" href="{{ "/style.css" | relative_url }}">
   </head>
   <body>
     {% include header.html %}
     <article>
+      <div class="article-header">
+        <h2>{{ page.title | xml_escape }}</h2>
+        <div class="date">{{ page.date | date_to_string }}</div>
+      </div>
       {{ content }}
     </article>
   </body>
