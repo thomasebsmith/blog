@@ -1,5 +1,6 @@
 /* Variables */
 $base-color: #111111;
+$code-background-color: #D9D9D9;
 $comment-color: #777777;
 $deleted-color: #A00000;
 $error-color: #FF0000;
@@ -17,13 +18,17 @@ $traceback-color: #0044DD;
 $type-color: #5511CC;
 $whitespace-color: #BBBBBB;
 
+div.highlight {
+  margin-bottom: 25px;
+}
+
 code {
   font-family: "Monaco", "Courier", monospace;
   font-size: 80%;
 }
 
 .highlight {
-  background-color: #D9D9D9;
+  background-color: $code-background-color;
   padding: 1px 5px;
 }
 

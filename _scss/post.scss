@@ -1,5 +1,7 @@
+$line-color: #D9D9D9;
+
 .article-header {
-  border-bottom: 1px solid #D9D9D9;
+  border-bottom: 1px solid $line-color;
 }
 
 .article-header > h2 {
