@@ -1,11 +1,12 @@
 name: Thomas Smith
 description: Software developer in Ann Arbor, Michigan
+url: https://thomasebsmith.github.io/blog/
 
 baseurl: "/blog"
 permalink: /:slug/
 version: v1.2.0
 
-gems:
+plugins:
   - jekyll-feed
 
 exclude:
@@ -13,3 +14,4 @@ exclude:
 
 sass:
   sass_dir: _scss
+  style: expanded
