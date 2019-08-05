@@ -12,6 +12,11 @@
       <div class="article-header">
         <h2>{{ page.title | xml_escape }}</h2>
         <div class="date">{{ page.date | date_to_string }}</div>
+        <div class="tags">
+        {% for tag in page.tags %}
+          <div class="tag">{{ tag | xml_escape }}</div>
+        {% endfor }
+        <div>
       </div>
       {{ content }}
     </article>

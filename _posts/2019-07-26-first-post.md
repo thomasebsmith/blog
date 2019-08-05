@@ -1,6 +1,7 @@
 ---
 title: The First Post
 layout: post
+tags: [Test, First Post, Programming]
 ---
 
 Hello, world.
@@ -43,6 +44,7 @@ List:
  - Item 1
  - Item 2
  - Item 3
+
 Another *list*:
  1. Item #1
  2. Item #2
