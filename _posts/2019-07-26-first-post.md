@@ -38,3 +38,14 @@ class Sub: Super {
   long long x = 390543890ll;
 };
 ```
+
+List:
+ - Item 1
+ - Item 2
+ - Item 3
+Another *list*:
+ 1. Item #1
+ 2. Item #2
+ 3. Item #3
+
+A [link](/index.html).
