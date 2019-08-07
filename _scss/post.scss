@@ -1,6 +1,4 @@
-$dark-gray-text-color: #666666;
 $light-gray-text-color: #D9D9D9;
-
 $line-color: $light-gray-text-color;
 
 .article-header {
@@ -9,26 +7,4 @@ $line-color: $light-gray-text-color;
 
 .article-header > h2 {
   display: inline-block;
-}
-
-.article-header > .date {
-  display: inline-block;
-  font-size: small;
-  margin-left: 10px;
-  opacity: 0.5;
-}
-
-.article-header > .tags {
-  display: inline-block;
-  margin-bottom: 10px;
-}
-
-.article-header > .tags > .tag {
-  background: $line-color;
-  border-radius: 3px;
-  color: $dark-gray-text-color;
-  display: inline-block;
-  font-size: 80%;
-  margin: 0 5px;
-  padding: 0 4px;
 }

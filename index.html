@@ -8,6 +8,11 @@ layout: default
     <div>
       <a href="{{ post.url | relative_url }}">{{ post.title | xml_escape }}</a>
       <div class="date">{{ post.date | date_to_string }}</div>
+      <div class="tags">
+      {% for tag in page.tags %}
+        <div class="tag">{{ tag | xml_escape }}</div>
+      {% endfor %}
+      </div>
       <div class="excerpt">{{ post.excerpt }}</div>
     </div>
   {% endfor %}
