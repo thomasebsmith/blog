@@ -2,6 +2,17 @@ $dark-gray-text-color: #666666;
 $light-gray-text-color: #D9D9D9;
 $line-color: $light-gray-text-color;
 
+blockquote {
+  border-left: 5px solid $line-color;
+  margin: 0;
+  padding-left: 20px;
+}
+
+hr {
+  border: none;
+  border-bottom: 2px solid $line-color;
+}
+
 .date {
   display: inline-block;
   font-size: small;
