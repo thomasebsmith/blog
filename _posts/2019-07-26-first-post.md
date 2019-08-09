@@ -8,6 +8,14 @@ Hello, world.
 
 **This is a test!!**
 
+`some("inline", code, 3.14);`
+
+> Blockquote here
+
+Line vvv
+
+---
+
 ```javascript
 var x = 5;
 if (x === 3.14) {
