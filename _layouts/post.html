@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    {% include head.html %}
     <title>{{ site.name }} | Blog | {{ page.title }}</title>
-    <link rel="stylesheet" href="/main.css">
-    <link rel="shortcut icon" type="image/png" href="/favicon.png">
-    <link rel="stylesheet" href="{{ "/style.css" | relative_url }}">
   </head>
   <body>
     {% include header.html %}
