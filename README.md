@@ -17,3 +17,18 @@ _config.yml          Jekyll configuration for the blog
 index.html           The content of the main page
 style.scss           The SCSS stylesheet to be transformed into style.css
 ```
+
+### Deployment
+This site should be deployed using Jekyll. It is optimized for GitHub pages but
+should work in a standard Jekyll environment. Note that it is intended to be
+hosted as a part of a larger website (e.g. at a path like /blog). This larger
+website should provide:
+
+ - /main.css
+ - /favicon.png
+ - /index.html
+ - /projects.html
+ - /contact.html
+
+If hosted on a path other than /blog, the \_includes/header.html file should be
+changed to correspond.
