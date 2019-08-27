@@ -2,6 +2,12 @@ $dark-gray-text-color: #666666;
 $light-gray-text-color: #D9D9D9;
 $line-color: $light-gray-text-color;
 
+/* Dark mode styles */
+@media(prefers-color-scheme: dark) {
+  $line-color: #787878;
+  $dark-gray-text-color: #D9D9D9;
+}
+
 blockquote {
   border-left: 5px solid $line-color;
   margin: 0;
