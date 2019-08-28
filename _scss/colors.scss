@@ -1,0 +1,21 @@
+$light-mode-colors: (
+  line-color: #D9D9D9
+);
+
+$dark-mode-colors: (
+  line-color: #787878
+);
+
+@mixin mode-color($name) {
+  color: map-get($light-mode-colors, $name);
+  @media(prefers-color-scheme: dark) {
+    color: map-get($dark-mode-colors, $name);
+  }
+}
+
+@mixin mode-background-color($name) {
+  background-color: map-get($light-mode-colors, $name);
+  @media(prefers-color-scheme: dark) {
+    background-color: map-get($dark-mode-colors, $name);
+  }
+}
