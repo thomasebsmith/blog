@@ -19,3 +19,10 @@ $dark-mode-colors: (
     background-color: map-get($dark-mode-colors, $name);
   }
 }
+
+@mixin mode-border-bottom($thickness, $style, $name) {
+  border-bottom: $thickness $style map-get($light-mode-colors, $name);
+  @media(prefers-color-scheme: dark) {
+    border-bottom: $thickness $style map-get($dark-mode-colors, $name);
+  }
+}
