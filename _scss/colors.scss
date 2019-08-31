@@ -17,7 +17,8 @@ $light-mode-colors: (
   traceback-color: #0044DD,
   type-color: #5511CC,
   whitespace-color: #BBBBBB,
-  line-color: #D9D9D9
+  line-color: #D9D9D9,
+  tag-text-color: #888888
 );
 
 $dark-mode-colors: (
@@ -39,7 +40,8 @@ $dark-mode-colors: (
   traceback-color: #2277DD,
   type-color: #9955FF,
   whitespace-color: #555555,
-  line-color: #787878
+  line-color: #787878,
+  tag-text-color: #3A3A3A
 );
 
 @mixin mode-color($name) {
