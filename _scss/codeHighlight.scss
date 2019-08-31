@@ -1,22 +1,4 @@
-/* Variables */
-$base-color: #111111;
-$code-background-color: #D9D9D9;
-$comment-color: #777777;
-$deleted-color: #A00000;
-$error-color: #FF0000;
-$inserted-color: #00A000;
-$keyword-color: #4488D0;
-$name-color: #2255CC;
-$number-color: #00AA00;
-$operator-color: #666666;
-$output-color: #888888;
-$regex-color: #F0A050;
-$string-color: #F0A050;
-$string-escape-color: #F08000;
-$subheading-color: #800080;
-$traceback-color: #0044DD;
-$type-color: #5511CC;
-$whitespace-color: #BBBBBB;
+@import "colors";
 
 div.highlight {
   margin-bottom: 25px;
@@ -28,70 +10,70 @@ code {
 }
 
 .highlight {
-  background-color: $code-background-color;
+  @include mode-background-color("code-background-color");
   padding: 1px 5px;
 }
 
 /* Comment */
 .highlight .c {
-  color: $comment-color;
+  @include mode-color("comment-color");
   font-style: italic;
 }
 
 /* Error */
 .highlight .err {
-  border: 1px solid $error-color;
+  @include mode-border(1px, solid, "error-color");
 }
 
 /* Keyword */
 .highlight .k {
-  color: $keyword-color;
+  @include mode-color("keyword-color");
   font-weight: bold;
 }
 
 /* Operator */
 .highlight .o {
-  color: $operator-color;
+  @include mode-color("operator-color");
 }
 
 /* Comment.Hashbang */
 .highlight .ch {
-  color: $comment-color;
+  @include mode-color("comment-color");
   font-style: italic;
 }
 
 /* Comment.Multiline */
 .highlight .cm {
-  color: $comment-color;
+  @include mode-color("comment-color");
   font-style: italic;
 }
 
 /* Comment.Preproc */
 .highlight .cp {
-  color: $comment-color;
+  @include mode-color("comment-color");
 }
 
 /* Comment.PreprocFile */
 .highlight .cpf {
-  color: $comment-color;
+  @include mode-color("comment-color");
   font-style: italic;
 }
 
 /* Comment.Single */
 .highlight .c1 {
-  color: $comment-color;
+  @include mode-color("comment-color");
   font-style: italic;
 }
 
 /* Comment.Special */
 .highlight .cs {
-  color: $comment-color;
+  @include mode-color("comment-color");
   font-style: italic;
 }
 
 /* Generic.Deleted */
 .highlight .gd {
-  color: $deleted-color;
+  @include mode-color("deleted-color");
 }
 
 /* Generic.Emph */
@@ -101,28 +83,28 @@ code {
 
 /* Generic.Error */
 .highlight .gr {
-  color: $error-color;
+  @include mode-color("error-color");
 }
 
 /* Generic.Heading */
 .highlight .gh {
-  color: $keyword-color;
+  @include mode-color("keyword-color");
   font-weight: bold;
 }
 
 /* Generic.Inserted */
 .highlight .gi {
-  color: $inserted-color;
+  @include mode-color("inserted-color");
 }
 
 /* Generic.Output */
 .highlight .go {
-  color: $output-color;
+  @include mode-color("output-color");
 }
 
 /* Generic.Prompt */
 .highlight .gp {
-  color: $keyword-color;
+  @include mode-color("keyword-color");
   font-weight: bold;
 }
 
@@ -133,269 +115,269 @@ code {
 
 /* Generic.Subheading */
 .highlight .gu {
-  color: $subheading-color;
+  @include mode-color("subheading-color");
   font-weight: bold;
 }
 
 /* Generic.Traceback */
 .highlight .gt {
-  color: $traceback-color;
+  @include mode-color("traceback-color");
 }
 
 /* Keyword.Constant */
 .highlight .kc {
-  color: $keyword-color;
+  @include mode-color("keyword-color");
   font-weight: bold;
 }
 
 /* Keyword.Declaration */
 .highlight .kd {
-  color: $keyword-color;
+  @include mode-color("keyword-color");
   font-weight: bold;
 }
 
 /* Keyword.Namespace */
 .highlight .kn {
-  color: $keyword-color;
+  @include mode-color("keyword-color");
   font-weight: bold;
 }
 
 /* Keyword.Pseudo */
 .highlight .kp {
-  color: $keyword-color;
+  @include mode-color("keyword-color");
 }
 
 /* Keyword.Reserved */
 .highlight .kr {
-  color: $keyword-color;
+  @include mode-color("keyword-color");
   font-weight: bold;
 }
 
 /* Keyword.Type */
 .highlight .kt {
-  color: $type-color;
+  @include mode-color("type-color");
 }
 
 /* Literal.Number */
 .highlight .m {
-  color: $number-color;
+  @include mode-color("number-color");
 }
 
 /* Parentheses */
 .highlight .p {
-  color: $operator-color;
+  @include mode-color("operator-color");
 }
 
 /* Literal.String */
 .highlight .s {
-  color: $string-color;
+  @include mode-color("string-color");
 }
 
 /* Name.Attribute */
 .highlight .na {
-  color: $name-color;
+  @include mode-color("name-color");
 }
 
 /* Name.Builtin */
 .highlight .nb {
-  color: $keyword-color;
+  @include mode-color("keyword-color");
 }
 
 /* Name.Class */
 .highlight .nc {
-  color: $name-color;
+  @include mode-color("name-color");
   font-weight: bold;
 }
 
 /* Name.Constant */
 .highlight .no {
-  color: $name-color;
+  @include mode-color("name-color");
 }
 
 /* Name.Decorator */
 .highlight .nd {
-  color: $name-color;
+  @include mode-color("name-color");
 }
 
 /* Name.Entity */
 .highlight .ni {
-  color: $name-color;
+  @include mode-color("name-color");
   font-weight: bold;
 }
 
 /* Name.Exception */
 .highlight .ne {
-  color: $name-color;
+  @include mode-color("name-color");
   font-weight: bold;
 }
 
 /* Name.Function */
 .highlight .nf {
-  color: $name-color;
+  @include mode-color("name-color");
 }
 
 /* Name.Label */
 .highlight .nl {
-  color: $name-color;
+  @include mode-color("name-color");
 }
 
 /* Name.Namespace */
 .highlight .nn {
-  color: $name-color;
+  @include mode-color("name-color");
   font-weight: bold;
 }
 
 /* Name.Tag */
 .highlight .nt {
-  color: $keyword-color;
+  @include mode-color("keyword-color");
   font-weight: bold;
 }
 
 /* Name.Variable */
 .highlight .nv {
-  color: $name-color;
+  @include mode-color("name-color");
 }
 
 /* Basic name */
 .highlight .nx {
-  color: $base-color;
+  @include mode-color("base-color");
 }
 
 /* Operator.Word */
 .highlight .ow {
-  color: $operator-color;
+  @include mode-color("operator-color");
   font-weight: bold;
 }
 
 /* Text.Whitespace */
 .highlight .w {
-  color: $whitespace-color;
+  @include mode-color("whitespace-color");
 }
 
 /* Literal.Number.Bin */
 .highlight .mb {
-  color: $number-color;
+  @include mode-color("number-color");
 }
 
 /* Literal.Number.Float */
 .highlight .mf {
-  color: $number-color;
+  @include mode-color("number-color");
 }
 
 /* Literal.Number.Hex */
 .highlight .mh {
-  color: $number-color;
+  @include mode-color("number-color");
 }
 
 /* Literal.Number.Integer */
 .highlight .mi {
-  color: $number-color;
+  @include mode-color("number-color");
 }
 
 /* Literal.Number.Oct */
 .highlight .mo {
-  color: $number-color;
+  @include mode-color("number-color");
 }
 
 /* Literal.String.Affix */
 .highlight .sa {
-  color: $string-color;
+  @include mode-color("string-color");
 }
 
 /* Literal.String.Backtick */
 .highlight .sb {
-  color: $string-color;
+  @include mode-color("string-color");
 }
 
 /* Literal.String.Char */
 .highlight .sc {
-  color: $string-color;
+  @include mode-color("string-color");
 }
 
 /* Literal.String.Delimiter */
 .highlight .dl {
-  color: $string-color;
+  @include mode-color("string-color");
 }
 
 /* Literal.String.Doc */
 .highlight .sd {
-  color: $string-color;
+  @include mode-color("string-color");
   font-style: italic;
 }
 
 /* Literal.String.Double */
 .highlight .s2 {
-  color: $string-color;
+  @include mode-color("string-color");
 }
 
 /* Literal.String.Escape */
 .highlight .se {
-  color: $string-escape-color;
+  @include mode-color("string-escape-color");
   font-weight: bold;
 }
 
 /* Literal.String.Heredoc */
 .highlight .sh {
-  color: $string-color;
+  @include mode-color("string-color");
 }
 
 /* Litrl.String.Interpol */
 .highlight .si {
-  color: $string-escape-color;
+  @include mode-color("string-escape-color");
   font-weight: bold;
 }
 
 /* Literal.String.Other */
 .highlight .sx {
-  color: $keyword-color;
+  @include mode-color("keyword-color");
 }
 
 /* Literal.String.Regex */
 .highlight .sr {
-  color: $regex-color;
+  @include mode-color("regex-color");
 }
 
 /* Literal.String.Single */
 .highlight .s1 {
-  color: $string-color;
+  @include mode-color("string-color");
 }
 
 /* Literal.String.Symbol */
 .highlight .ss {
-  color: $string-escape-color;
+  @include mode-color("string-escape-color");
 }
 
 /* Name.Builtin.Pseudo */
 .highlight .bp {
-  color: $keyword-color;
+  @include mode-color("keyword-color");
 }
 
 /* Name.Function.Magic */
 .highlight .fm {
-  color: $name-color;
+  @include mode-color("name-color");
 }
 
 /* Name.Variable.Class */
 .highlight .vc {
-  color: $name-color;
+  @include mode-color("name-color");
 }
 
 /* Name.Variable.Global */
 .highlight .vg {
-  color: $name-color;
+  @include mode-color("name-color");
 }
 
 /* Name.Variable.Instance */
 .highlight .vi {
-  color: $name-color;
+  @include mode-color("name-color");
 }
 
 /* Name.Variable.Magic */
 .highlight .vm {
-  color: $name-color;
+  @include mode-color("name-color");
 }
 
 /* Literal.Number.Integer.Long */
 .highlight .il {
-  color: $number-color;
+  @include mode-color("number-color");
 }

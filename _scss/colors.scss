@@ -1,8 +1,44 @@
 $light-mode-colors: (
+  base-color: #111111,
+  code-background-color: #D9D9D9,
+  comment-color: #777777,
+  deleted-color: #A00000,
+  error-color: #FF0000,
+  inserted-color: #00A000,
+  keyword-color: #4488D0,
+  name-color: #2255CC,
+  number-color: #00AA00,
+  operator-color: #666666,
+  output-color: #888888,
+  regex-color: #F0A050,
+  string-color: #F0A050,
+  string-escape-color: #F08000,
+  subheading-color: #800080,
+  traceback-color: #0044DD,
+  type-color: #5511CC,
+  whitespace-color: #BBBBBB,
   line-color: #D9D9D9
 );
 
 $dark-mode-colors: (
+  base-color: #EEEEEE,
+  code-background-color: #333333,
+  comment-color: #CFCFCF,
+  deleted-color: #A00000,
+  error-color: #FF0000,
+  inserted-color: #00A000,
+  keyword-color: #4499FF,
+  name-color: #2266FF,
+  number-color: #22CC22,
+  operator-color: #ABABAB,
+  output-color: #BBBBBB,
+  regex-color: #F0A050,
+  string-color: #F0A050,
+  string-escape-color: #F08000,
+  subheading-color: #D000D0,
+  traceback-color: #2277DD,
+  type-color: #9955FF,
+  whitespace-color: #555555,
   line-color: #787878
 );
 
@@ -20,9 +56,23 @@ $dark-mode-colors: (
   }
 }
 
+@mixin mode-border($thickness, $style, $name) {
+  border: $thickness $style map-get($light-mode-colors, $name);
+  @media(prefers-color-scheme: dark) {
+    border: $thickness $style map-get($dark-mode-colors, $name);
+  }
+}
+
 @mixin mode-border-bottom($thickness, $style, $name) {
   border-bottom: $thickness $style map-get($light-mode-colors, $name);
   @media(prefers-color-scheme: dark) {
     border-bottom: $thickness $style map-get($dark-mode-colors, $name);
+  }
+}
+
+@mixin mode-border-left($thickness, $style, $name) {
+  border-left: $thickness $style map-get($light-mode-colors, $name);
+  @media(prefers-color-scheme: dark) {
+    border-left: $thickness $style map-get($dark-mode-colors, $name);
   }
 }
