@@ -9,9 +9,9 @@ code {
   font-size: 80%;
 }
 
-.highlight {
+.highlight, :not(.highlight)>code {
   @include mode-background-color("code-background-color");
-  padding: 1px 5px;
+  padding: 3px 5px;
 }
 
 /* Comment */
