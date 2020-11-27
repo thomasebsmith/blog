@@ -1,7 +1,7 @@
 # Thomas Smith's Blog
 This repository contains the code for Thomas Smith's blog. The blog is written
-in Jekyll and hosted on GitHub pages. The blog primarily contains
-programming-related articles.
+in Jekyll and designed to be hosted on GitHub pages.
+The blog primarily contains programming-related articles.
 
 
 ### Project Structure
@@ -24,11 +24,11 @@ should work in a standard Jekyll environment. Note that it is intended to be
 hosted as a part of a larger website (specifically at the /blog subpath).
 This larger website should provide:
 
- - /main.css
- - /favicon.png
- - /index.html
- - /projects.html
- - /contact.html
+ - `/main.css`
+ - `/favicon.png`
+ - `/index.html`
+ - `/projects.html`
+ - `/contact.html`
 
-If hosted on a path other than /blog, the \_includes/header.html file should be
-changed to correspond.
+If hosted on a path other than /blog, the `\_includes/header.html` file
+should be changed to use the new path.
