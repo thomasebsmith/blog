@@ -1,3 +1,4 @@
+/* Color schemes */
 $light-mode-colors: (
   base-color: #111111,
   code-background-color: #D9D9D9,
@@ -44,6 +45,7 @@ $dark-mode-colors: (
   tag-text-color: #2A2A2A
 );
 
+/* Mixins */
 @mixin mode-color($name) {
   color: map-get($light-mode-colors, $name);
   @media(prefers-color-scheme: dark) {
